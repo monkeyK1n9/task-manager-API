@@ -33,7 +33,7 @@ const updateTask = asyncWrapper(async (req, res) => {
     const {id: taskID} = req.params
 
     const task = await Task.findOneAndUpdate({_id: taskID}, req.body, {
-        new: true,
+        new: true, //this is to avoid rewriting properties in the task to be modified that we didn't want to
         runValidators: true,
         useFindAndModify: false
     })
