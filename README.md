@@ -9,10 +9,15 @@ This is an API for a task manager, with this, you can:
 - Delete a task
 
 ## Install
-To get started with the project, run the following in your command line
+To get started with the project, you will need to install the dependencies with the command: 
 ```
 npm install
 ```
+Spin and start your server with:
+```
+npm start
+```
+Nodemon will listen to any of your changes. Congratulations, you can start coding.
 
 Create a cluster in your <a href="https://cloud.mongodb.com/">MongoDB</a>, and add the MONGO_URI in your .env file. 
 If you don't have any idea of how to setup your MongoDB account, follow the <a href="https://www.mongodb.com/docs/atlas/tutorial/create-atlas-account/">link</a>
